@@ -11,9 +11,6 @@ brew install gh
 brew install rbenv
 brew install starship
 
-brew tap homebrew/cask-versions
-brew tap homebrew/cask-fonts
-
 brew install --cask 1password
 brew install --cask arc
 brew install --cask docker
