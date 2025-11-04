@@ -14,7 +14,6 @@ brew install starship
 brew install --cask 1password
 brew install --cask arc
 brew install --cask docker
-brew install --cask dozer
 brew install --cask figma
 brew install --cask firefox
 brew install --cask fliqlo
