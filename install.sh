@@ -21,4 +21,5 @@ brew install --cask font-fira-code
 brew install --cask github
 brew install --cask imageoptim
 brew install --cask iterm2@beta
+brew install --cask maccy
 brew install --cask visual-studio-code
