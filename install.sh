@@ -9,7 +9,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 brew install \
   git \
   gh \
-  pinentry-mac \
   rbenv \
   starship
 
@@ -25,7 +24,6 @@ brew install --cask \
   fliqlo \
   font-fira-code \
   github \
-  gpg-suite \
   imageoptim \
   iterm2@beta \
   visual-studio-code
