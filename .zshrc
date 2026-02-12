@@ -70,12 +70,16 @@ export ZSH="$HOME/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
+# Load plugins
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting nvm)
+
+# Add Homebrew’s zsh completion functions to the FPATH
 if type brew &>/dev/null; then
   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 fi
 
+# Load Oh My Zsh
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -120,3 +124,6 @@ zstyle ':completion:*:*:hosts' hosts ''
 eval "$(starship init zsh)"
 
 autoload -U compinit; compinit
+
+# Apply .nvmrc after full config (covers reload / login shell; chpwd only runs on cd)
+[[ -f .nvmrc ]] && nvm use 2>/dev/null
