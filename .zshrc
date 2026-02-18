@@ -121,6 +121,8 @@ unset file;
 
 zstyle ':completion:*:*:hosts' hosts ''
 
+eval "$(fnm env --use-on-cd --shell zsh)"
+
 eval "$(starship init zsh)"
 
 autoload -U compinit; compinit
