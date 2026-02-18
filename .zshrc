@@ -72,7 +72,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Add wisely, as too many plugins slow down shell startup.
 
 # Load plugins
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting nvm)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 # Add Homebrew’s zsh completion functions to the FPATH
 if type brew &>/dev/null; then
@@ -124,6 +124,3 @@ zstyle ':completion:*:*:hosts' hosts ''
 eval "$(starship init zsh)"
 
 autoload -U compinit; compinit
-
-# Apply .nvmrc after full config (covers reload / login shell; chpwd only runs on cd)
-[[ -f .nvmrc ]] && nvm use 2>/dev/null
